@@ -1,10 +1,71 @@
-<h1>Your Date Summary</h1>
-<p>Date: <span id="confirmDate"></span></p>
-<p>Activity: <span id="confirmActivity"></span></p>
-<p>Food: <span id="confirmFood"></span></p>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirmation Receipt</title>
+    <link rel="stylesheet" href="style.css"> <!-- Ensure your CSS file is correctly linked -->
+</head>
+<style>
+    .receipt-container {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
 
-<script>
-document.getElementById('confirmDate').textContent = sessionStorage.getItem('selectedDate');
-document.getElementById('confirmActivity').textContent = sessionStorage.getItem('selectedActivity');
-document.getElementById('confirmFood').textContent = sessionStorage.getItem('selectedFood'); // Assume this is set in the food selection step
-</script>
+.receipt-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.receipt-container p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.receipt-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+.receipt-container button#venmoButton {
+    background-color: #3d95ce;
+}
+
+</style>
+<body>
+    <div class="receipt-container">
+        <h2>Date Confirmation Receipt</h2>
+        <p>Date: <span id="confirmDate"></span></p>
+        <p>Activity: <span id="confirmActivity"></span></p>
+        <p>Food: <span id="confirmFood"></span></p>
+        <hr>
+        <p>Total: <strong>$500 USD</strong></p>
+        <button id="payNowButton">Pay Now</button>
+        <button id="venmoButton">Pay with Venmo</button>
+    </div>
+
+    <script>
+        document.getElementById('confirmDate').textContent = sessionStorage.getItem('selectedDate');
+        document.getElementById('confirmActivity').textContent = sessionStorage.getItem('selectedActivity');
+        document.getElementById('confirmFood').textContent = sessionStorage.getItem('selectedFood');
+        
+        document.getElementById('payNowButton').addEventListener('click', function() {
+            // Implement payment logic here
+            alert('Redirecting to payment...');
+        });
+        
+        document.getElementById('venmoButton').addEventListener('click', function() {
+            // Implement Venmo payment logic here
+            alert('Redirecting to Venmo...');
+        });</script>
+</body>
+</html>
