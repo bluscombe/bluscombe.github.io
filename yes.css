@@ -350,3 +350,13 @@ body{
         transform:translate(-36vmin,1.1vmin) rotateY(-80deg) rotateX(35deg);
     }
 }
+
+.panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
