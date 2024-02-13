@@ -24,14 +24,25 @@
             <img src="food3.jpg" alt="Wings">
             <p>Wings</p>
         </div>
-        <!-- Add more containers for additional dates as needed -->
+        <div class="image-container" onclick="selectFood('Thai')">
+            <img src="food4.png" alt="Thai">
+            <p>Thai</p>
+        </div>
+        <div class="image-container" onclick="selectFood('Mexican')">
+            <img src="food5.png" alt="Wings">
+            <p>Mexican</p>
+        </div>
+        <div class="image-container" onclick="selectFood('Sushi')">
+            <img src="food6.png" alt="Sushi">
+            <p>Sushi</p>
+        </div>
     </div>
 </div>
 
 <script>
 function selectFood(food) {
   // Store the selected food
-  sessionStorage.setItem('selectedFood', activity);
+  sessionStorage.setItem('selectedFood', food);
   // Navigate to the confirmation selection page
   window.location.href = 'confirmation.html';
 }
