@@ -354,9 +354,10 @@ body{
 .panel {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50;
+    width: auto;
     text-align: center;
     margin: 0;
+    text-align: center;
     padding: 10px 0;
 }
