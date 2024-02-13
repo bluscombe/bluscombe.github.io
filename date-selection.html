@@ -1,36 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentine Brodini</title>
     <link rel="stylesheet" href="./main.css">
-    
 </head>
-
-
 <body>
-<script src="main.js"></script>
-<div class="panel">
+
+<!-- <div class="panel">
     <h2>You Have Been Chosen!</h2>
     <h1>Will you be my Valentine?</h1>
     <div class="button-container">
-        <h2><button class="button-1">Yes!</button></h2>
-        <h2><button class="button-2">No!</button></h2>
+         Your Yes and No buttons here
+    </div>
+</div> -->
+
+<div class="date-selection">
+    <h1>Select a Date</h1>
+    <div class="date-options">
+        <div class="image-container" onclick="selectDate('Option 1')">
+            <img src="date1.jpg" alt="Option 1: Date 1">
+            <p>Option 1: Date 1</p>
+        </div>
+        <div class="image-container" onclick="selectDate('Option 2')">
+            <img src="date2.jpg" alt="Option 2: Date 2">
+            <p>Option 2: Date 2</p>
+        </div>
+        <div class="image-container" onclick="selectDate('Option 3')">
+            <img src="date3.jpg" alt="Option 3: Date 3">
+            <p>Option 3: Date 3</p>
+        </div>
+        <!-- Add more containers for additional dates as needed -->
     </div>
 </div>
 
-<h1>Select a Date</h1>
-<button onclick="selectDate('Option 1')">Option 1: Date 1</button>
-<button onclick="selectDate('Option 2')">Option 2: Date 2</button>
-<button onclick="selectDate('Option 3')">Option 3: Date 3</button>
 
+<script src="main.js"></script>
 <script>
 function selectDate(date) {
-  // Store the selected date
   sessionStorage.setItem('selectedDate', date);
-  // Navigate to the activities page
-  window.location.href = 'activities.html';
+  window.location.href = 'activities.html'; // Navigate to the next page
 }
 </script>
 
