@@ -83,7 +83,7 @@ button {
 .button-container button:last-child {
     margin-left: 50px;
 }
-.button-2 {
+.button-container2 {
     position: absolute;
     top: 0;
     left: 0;
