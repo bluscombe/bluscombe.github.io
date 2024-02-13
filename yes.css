@@ -352,7 +352,7 @@ body{
 }
 
 .panel {
-    color: white;
+    color: rgb(243, 190, 252);
     position: absolute;
     top: 0;
     left: 50%; /* Changed this to 50% */
@@ -361,4 +361,10 @@ body{
     text-align: center;
     margin: 0;
     padding: 10px 0;
+}
+
+.panel h1,
+.panel h2,
+.panel p {
+    color: black;
 }
