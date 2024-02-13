@@ -12,22 +12,23 @@
 <div class="date-selection">
     <h1>Which Genre &#128154;</h1>
     <div class="date-options">
-        <div class="image-container" onclick="selectFood('Date 1')">
-            <img src="date1.jpg" alt="Option 1: Date 1">
-            <p>8th Mar</p>
+        <div class="image-container" onclick="selectFood('Pasta?')">
+            <img src="food1.jpg" alt="Pasta?">
+            <p>Pasta?</p>
         </div>
-        <div class="image-container" onclick="selectFood('Date 2')">
-            <img src="date2.jpg" alt="Option 2: Date 2">
-            <p>9th Mar</p>
+        <div class="image-container" onclick="selectFood('Lobster Roll')">
+            <img src="food2.jpg" alt="Lobster Roll">
+            <p>Lobster Roll</p>
         </div>
-        <div class="image-container" onclick="selectFood('Date 3')">
-            <img src="date3.jpg" alt="Option 3: Date 3">
-            <p>16th Mar</p>
+        <div class="image-container" onclick="selectFood('Wings')">
+            <img src="food3.jpg" alt="Wings">
+            <p>Wings</p>
         </div>
         <!-- Add more containers for additional dates as needed -->
     </div>
 </div>
 
+<script>
 function selectFood(food) {
   // Store the selected food
   sessionStorage.setItem('selectedFood', activity);
