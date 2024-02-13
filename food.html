@@ -9,26 +9,24 @@
 </head>
 
 
-<body>
-<script src="main.js"></script>
-<div class="panel">
-    <h2>You Have Been Chosen!</h2>
-    <h1>Will you be my Valentine?</h1>
-    <div class="button-container">
-        <h2><button class="button-1">Yes!</button></h2>
-        <h2><button class="button-2">No!</button></h2>
+<div class="date-selection">
+    <h1>Which Genre &#128154;</h1>
+    <div class="date-options">
+        <div class="image-container" onclick="selectFood('Date 1')">
+            <img src="date1.jpg" alt="Option 1: Date 1">
+            <p>8th Mar</p>
+        </div>
+        <div class="image-container" onclick="selectFood('Date 2')">
+            <img src="date2.jpg" alt="Option 2: Date 2">
+            <p>9th Mar</p>
+        </div>
+        <div class="image-container" onclick="selectFood('Date 3')">
+            <img src="date3.jpg" alt="Option 3: Date 3">
+            <p>16th Mar</p>
+        </div>
+        <!-- Add more containers for additional dates as needed -->
     </div>
 </div>
-
-<h1><span id="dateText"></span></h1>
-<h1>, <span id="activityText"></span></h1>
-<button onclick="selectFood('Food 1')">Food</button>
-<!-- Add more activities as needed -->
-
-<script>
-// Display the selected date
-document.getElementById('dateText').textContent = sessionStorage.getItem('selectedDate');
-document.getElementById('activityText').textContent = sessionStorage.getItem('selectedActivity');
 
 function selectFood(food) {
   // Store the selected food

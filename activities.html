@@ -12,16 +12,16 @@
 <div class="date-selection">
     <h1>Select an Activity</h1>
     <div class="date-options">
-        <div class="image-container" onclick="selectActivity('Activity 1')">
-            <img src="activity1.jpg" alt="Option 1: Date 1">
+        <div class="image-container" onclick="selectActivity('Hike')">
+            <img src="activity1.jpg" alt="Hike">
             <p>Hike</p>
         </div>
-        <div class="image-container" onclick="selectActivity('Activity 2')">
-            <img src="activity2.jpg" alt="Option 2: Date 2">
+        <div class="image-container" onclick="selectActivity('Rock Climbing')">
+            <img src="activity2.jpg" alt="Rock Climbing">
             <p>Rock Climbing</p>
         </div>
-        <div class="image-container" onclick="selectActivity('Activity 3')">
-            <img src="activity3.jpg" alt="Option 3: Date 3">
+        <div class="image-container" onclick="selectActivity('Thrifting')">
+            <img src="activity3.jpg" alt="Thrifting">
             <p>Thrifting</p>
         </div>
         <!-- Add more containers for additional dates as needed -->
@@ -29,8 +29,6 @@
 </div>
 
 <script>
-// Display the selected date
-document.getElementById('dateText').textContent = sessionStorage.getItem('selectedDate');
 
 function selectActivity(activity) {
   // Store the selected activity
