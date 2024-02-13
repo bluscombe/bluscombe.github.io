@@ -20,19 +20,21 @@
     </div>
 </div>
 
-<h1>Choose an Activity for <span id="dateText"></span></h1>
-<button onclick="selectActivity('Activity 1')">Activity 1</button>
+<h1><span id="dateText"></span></h1>
+<h1>, <span id="activityText"></span></h1>
+<button onclick="selectFood('Food 1')">Food</button>
 <!-- Add more activities as needed -->
 
 <script>
 // Display the selected date
 document.getElementById('dateText').textContent = sessionStorage.getItem('selectedDate');
+document.getElementById('activityText').textContent = sessionStorage.getItem('selectedActivity');
 
 function selectActivity(activity) {
   // Store the selected activity
-  sessionStorage.setItem('selectedActivity', activity);
+  sessionStorage.setItem('selectedFood', activity);
   // Navigate to the food selection page
-  window.location.href = 'food.html';
+  window.location.href = 'confirmation.html';
 }
 </script>
 
