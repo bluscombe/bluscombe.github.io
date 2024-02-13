@@ -100,11 +100,11 @@ button {
   .right-aligned-image {
     position: fixed; /* or 'absolute' if you don't want it to stay fixed on scroll */
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 20%;
+    transform: translate(-20%, -70%);
     width: 40%; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
-    opacity: 0.5; /* Makes the image slightly opaque */
+    opacity: 0.2; /* Makes the image slightly opaque */
     margin-left: 0; /* Removed since we're centering it, not aligning to the right */
 }
 
