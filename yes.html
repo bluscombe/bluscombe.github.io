@@ -12,7 +12,7 @@
 <body>
 <div class="panel">
     <h2>Thank You For Confirming!</h2>
-    <h1>Here are some digital flowers for you</h1>
+    <h1>Here are some flowers for you</h1>
     <div class="button-container">
         <!-- <h2><button class="button-1">Yes!</button></h2>
         <h2><button class="button-2">No!</button></h2> -->
@@ -59,8 +59,16 @@
             <div class="flower__leaf flower__leaf--6"></div>
             <div class="flower__leaf flower__leaf--7"></div>
             <div class="flower__leaf flower__leaf--8 flower__fall-down--purple"></div>
+            <button id="secretButton" style="opacity: 50;">Find Me!</button>
         </div>
     </div>
     <div class="flower__glass"></div>
 </div>
 
+<script>
+    document.getElementById('secretButton').onclick = function() {
+      window.location.href = 'date-selection.html';
+    };
+</script>
+</body>
+</html>
