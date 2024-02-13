@@ -363,6 +363,10 @@ body{
     padding: 10px 0;
 }
 
+.secretButton {
+    background-color: #104d4e;
+}
+
 .panel h1,
 .panel h2,
 .panel p {
