@@ -355,10 +355,10 @@ body{
     color: white;
     position: absolute;
     top: 0;
-    left: 50;
+    left: 50%; /* Changed this to 50% */
+    transform: translateX(-50%); /* This centers the panel horizontally */
     width: auto;
     text-align: center;
     margin: 0;
-    text-align: center;
     padding: 10px 0;
 }
