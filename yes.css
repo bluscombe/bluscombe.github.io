@@ -13,7 +13,7 @@
 }
 
 body{
-    background-image:var(--color-bg);
+    /* background-image:var(--color-bg); */
     min-height: 100vh;
     display: flex;
     justify-content: center;

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Brodini</title>
+    <link rel="stylesheet" href="./main.css">
+    
+</head>
+
+
+<body>
+<script src="main.js"></script>
+<div class="panel">
+    <h2>You Have Been Chosen!</h2>
+    <h1>Will you be my Valentine?</h1>
+    <div class="button-container">
+        <h2><button class="button-1">Yes!</button></h2>
+        <h2><button class="button-2">No!</button></h2>
+    </div>
+</div>
+
+<h1>Choose an Activity for <span id="dateText"></span></h1>
+<button onclick="selectActivity('Activity 1')">Activity 1</button>
+<!-- Add more activities as needed -->
+
+<script>
+// Display the selected date
+document.getElementById('dateText').textContent = sessionStorage.getItem('selectedDate');
+
+function selectActivity(activity) {
+  // Store the selected activity
+  sessionStorage.setItem('selectedActivity', activity);
+  // Navigate to the food selection page
+  window.location.href = 'food-selection.html';
+}
+</script>
+
+</body>
+</html>
