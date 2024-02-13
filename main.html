@@ -14,15 +14,14 @@
 <body>
 <script src="main.js"></script>
 <div class="panel">
-    <h2></h2>
-    <h1>Try Again</h1>
+    <h2>You Have Been Chosen!</h2>
+    <h1>Will you be my Valentine?</h1>
     <div class="button-container">
         <h2><button class="button-1">Yes!</button></h2>
-        
+        <h2><button class="button-2">No!</button></h2>
     </div>
 </div>
 
-<h2><button class="button-2">No!</button></h2>
 <script>
 let yesBtn = document.querySelector('.button-1');
 let noBtn = document.querySelector('.button-2');
@@ -32,7 +31,7 @@ yesBtn.addEventListener('click', function() {
 });
 
 noBtn.addEventListener('click', function() {
-  window.location.href = 'no2.html';
+    window.location.href = 'no1.html';
 });
 </script>
 

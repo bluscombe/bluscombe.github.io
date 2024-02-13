@@ -1,44 +1,39 @@
-<!-- index.html -->
+<!-- login.html -->
 
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=login.html">
-    <title>Valentine Brodini</title>
-    <link rel="stylesheet" href="./index.css">
-    
+  <title>Login</title>
 </head>
-
-
 <body>
-<script>
-    window.location.href = 'login.html';
-</script>
-<p>If you are not redirected, <a href="login.html">click here to login</a>.</p>
-<script src="index.js"></script>
-<div class="panel">
-    <h2>You Have Been Chosen!</h2>
-    <h1>Will you be my Valentine?</h1>
-    <div class="button-container">
-        <h2><button class="button-1">Yes!</button></h2>
-        <h2><button class="button-2">No!</button></h2>
-    </div>
-</div>
 
-<script>
-let yesBtn = document.querySelector('.button-1');
-let noBtn = document.querySelector('.button-2');
-
-yesBtn.addEventListener('click', function() {
-  window.location.href = 'yes.html';
-});
-
-noBtn.addEventListener('click', function() {
-    window.location.href = 'no1.html';
-});
-</script>
+  <h1>Login</h1>
+  
+  <form>
+    Username: <input type="text" name="username" id="username"><br>
+    Password: <input type="password" name="password" id="password"><br>
+      
+    <input type="button" value="Login" onclick="validate()">
+  </form>
+  
+  <script>
+    function validate() {
+      // Get the input values
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      
+      if (username === "brodiniv" && password === "") {
+        // If valid, set the login state in session storage
+        sessionStorage.setItem('isLoggedIn', 'true');
+        
+        // Redirect to the loading page
+        window.location.href = 'loading.html'; 
+      } else {
+        // If invalid, display an error message
+        alert("Invalid username or password. Please try again.");
+      }
+    }
+  </script>
 
 </body>
 </html>
