@@ -9,20 +9,24 @@
 </head>
 
 
-<body>
-<script src="main.js"></script>
-<div class="panel">
-    <h2>You Have Been Chosen!</h2>
-    <h1>Will you be my Valentine?</h1>
-    <div class="button-container">
-        <h2><button class="button-1">Yes!</button></h2>
-        <h2><button class="button-2">No!</button></h2>
+<div class="date-selection">
+    <h1>Select a Date</h1>
+    <div class="date-options">
+        <div class="image-container" onclick="selectDate('Activity 1')">
+            <img src="activity1.jpg" alt="Option 1: Date 1">
+            <p>Hike</p>
+        </div>
+        <div class="image-container" onclick="selectDate('Activity 2')">
+            <img src="activity2.jpg" alt="Option 2: Date 2">
+            <p>Rock Climbing</p>
+        </div>
+        <div class="image-container" onclick="selectDate('Activity 3')">
+            <img src="activity3.jpg" alt="Option 3: Date 3">
+            <p>Thrifting</p>
+        </div>
+        <!-- Add more containers for additional dates as needed -->
     </div>
 </div>
-
-<h1>Choose an Activity for <span id="dateText"></span></h1>
-<button onclick="selectActivity('Activity 1')">Activity 1</button>
-<!-- Add more activities as needed -->
 
 <script>
 // Display the selected date
