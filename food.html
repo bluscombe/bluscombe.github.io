@@ -30,10 +30,10 @@
 document.getElementById('dateText').textContent = sessionStorage.getItem('selectedDate');
 document.getElementById('activityText').textContent = sessionStorage.getItem('selectedActivity');
 
-function selectActivity(activity) {
-  // Store the selected activity
+function selectFood(food) {
+  // Store the selected food
   sessionStorage.setItem('selectedFood', activity);
-  // Navigate to the food selection page
+  // Navigate to the confirmation selection page
   window.location.href = 'confirmation.html';
 }
 </script>
