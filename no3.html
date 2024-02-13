@@ -1,0 +1,43 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Brodini</title>
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+
+
+<body>
+<script src="runawayButton.js"></script>
+<div class="panel">
+    <h2></h2>
+    <h1>Dont Play With Me</h1>
+    <div class="button-container">
+        <h2><button class="button-1">Yes!</button></h2>
+        
+    </div>
+</div>
+<div class="button-container2">
+  <h2><button class="button-2">No!</button></h2>
+</div>
+
+<script>
+let yesBtn = document.querySelector('.button-1');
+let noBtn = document.querySelector('.button-2');
+
+yesBtn.addEventListener('click', function() {
+  window.location.href = 'yes.html';
+});
+
+noBtn.addEventListener('click', function() {
+  yesBtn.innerHTML = 'Try Again';
+  noBtn.style.display = 'none';
+});
+</script>
+
+</body>
+</html>

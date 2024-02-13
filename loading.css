@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+    font-family: "Courier New", Courier, monospace;
+}
+.conatiner{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+.conatiner .border{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(./border.png);
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conatiner .border .qrcode{
+    position: relative;
+    width: 380px;
+    height: 380px;
+    background: url(./login.png);
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+.conatiner .border .qrcode::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./login2.png);
+    background-size: 380px;
+    overflow: hidden;
+    animation: animImg 4s linear infinite;
+}
+@keyframes animImg{
+    0%,
+    100%{
+        height: 18px;
+    }
+    50%{
+        height: calc(100% - 18px);
+    }
+}
+.conatiner .border .qrcode::after{
+    content: '';
+    position: absolute;
+    inset: 6px;
+    width: calc(100% - 10px);
+    height: 2px;
+    background: #FF0000;
+    filter: drop-shadow(0 0 30px #FF0000) drop-shadow(0 0 60px #FF0000) drop-shadow(0 0 100px #FF0000);
+    animation: animLine 4s linear infinite;
+}
+@keyframes animLine{
+    0%,
+    100%{
+        top: 18px;
+    }
+    50%{
+        top: calc(100% - 18px);
+    }
+}
+
+.scanning-user {
+    color: red;
+    font-size: 24px;
+    text-align: center;
+   
+}
