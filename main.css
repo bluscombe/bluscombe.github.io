@@ -100,9 +100,9 @@ button {
   .right-aligned-image {
     position: fixed;
     top: 50%;
-    left: 0; /* Position it fully on the left side of the screen */
+    left: 5; /* Position it fully on the left side of the screen */
     transform: translate(0, -50%); /* Correctly center it vertically */
-    width: 20%; /* Adjust width as necessary */
+    width: 30%; /* Adjust width as necessary */
     height: auto;
     z-index: -1; /* Ensure it's behind other content */
     pointer-events: none; /* Ensure it doesn't interfere with clicking other elements */
@@ -111,9 +111,9 @@ button {
 .right-up-aligned-image {
     position: fixed;
     top: 50%;
-    right: 0; /* Position it fully on the right side of the screen */
+    right: 5; /* Position it fully on the right side of the screen */
     transform: translate(0, -50%); /* Correctly center it vertically */
-    width: 20%; /* Adjust width as necessary */
+    width: 30%; /* Adjust width as necessary */
     height: auto;
     z-index: -1; /* Ensure it's behind other content */
     pointer-events: none; /* Ensure it doesn't interfere with clicking other elements */
