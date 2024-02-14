@@ -100,11 +100,10 @@ button {
   .right-aligned-image {
     position: fixed;
     top: 50%;
-    left: 10%; /* Position it slightly to the left of the center */
+    left: 10; /* Position it slightly to the left of the center */
     transform: translate(0, -50%); /* Correctly center it vertically */
     width: 40%;
     height: auto;
-    opacity: 0.9;
     z-index: -1; /* Ensure it's behind other content */
     pointer-events: none; /* Ensure it doesn't interfere with clicking other elements */
 }
@@ -112,11 +111,10 @@ button {
 .right-up-aligned-image {
     position: fixed;
     top: 50%;
-    right: 10%; /* Position it slightly to the right of the center */
+    right: 10; /* Position it slightly to the right of the center */
     transform: translate(0, -50%); /* Correctly center it vertically */
     width: 40%;
     height: auto;
-    opacity: 0.9;
     z-index: -1; /* Ensure it's behind other content */
     pointer-events: none; /* Ensure it doesn't interfere with clicking other elements */
 }
