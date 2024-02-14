@@ -24,14 +24,12 @@
 </div>
 
 <script>
-let yesBtn = document.querySelector('.button-1');
+let yesBtns = document.querySelectorAll('.button-1'); // Selects all elements with class 'button-1'
 
-yesBtn.addEventListener('click', function() {
-  window.location.href = 'yes.html';
-});
-
-yesBtn.addEventListener('click', function() {
-  window.location.href = 'yes.html';
+yesBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        window.location.href = 'yes.html';
+    });
 });
 </script>
 
