@@ -100,9 +100,9 @@ button {
   .right-aligned-image {
     position: fixed;
     top: 50%;
-    left: 10; /* Position it slightly to the left of the center */
+    left: 0; /* Position it fully on the left side of the screen */
     transform: translate(0, -50%); /* Correctly center it vertically */
-    width: 40%;
+    width: 20%; /* Adjust width as necessary */
     height: auto;
     z-index: -1; /* Ensure it's behind other content */
     pointer-events: none; /* Ensure it doesn't interfere with clicking other elements */
@@ -111,13 +111,14 @@ button {
 .right-up-aligned-image {
     position: fixed;
     top: 50%;
-    right: 10; /* Position it slightly to the right of the center */
+    right: 0; /* Position it fully on the right side of the screen */
     transform: translate(0, -50%); /* Correctly center it vertically */
-    width: 40%;
+    width: 20%; /* Adjust width as necessary */
     height: auto;
     z-index: -1; /* Ensure it's behind other content */
     pointer-events: none; /* Ensure it doesn't interfere with clicking other elements */
 }
+
 
   .heart {
     width: 50px;
